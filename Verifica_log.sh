@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "Você está logado em '$WHOAMI' ";
+echo "Você está logado em $(whoami) ";
 
-if [ '$WHOAMI' != "oracle" ]; then
+if [ "$(whoami)" != "oracle" ]; then
     echo "Deve estar logado em oracle para rodar esse script."
     exit
 fi
